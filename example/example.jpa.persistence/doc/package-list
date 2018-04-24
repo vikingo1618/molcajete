@@ -1,0 +1,3 @@
+com.axity.example.jpa.persistence.base
+com.axity.example.jpa.persistence.dao
+com.axity.example.jpa.persistence.dao.impl

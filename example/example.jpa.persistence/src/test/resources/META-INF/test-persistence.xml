@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="ExamplePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+
+    <description>Definicion de la unidad de persistencia de testing</description>
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+    <jta-data-source>java:ds/Example</jta-data-source>
+    <class>com.axity.example.jpa.model.CarrierDO</class>
+    <class>com.axity.example.jpa.model.StationDO</class>
+    <class>com.axity.example.jpa.model.RouteDO</class>
+    <class>com.axity.example.jpa.model.FlightDO</class>
+    <class>com.axity.example.jpa.model.CountryDO</class>
+    <class>com.axity.example.jpa.model.AircraftTypeDO</class>
+    <class>com.axity.example.jpa.model.AircraftDO</class>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+      <property name="hibernate.show_sql" value="true" />
+      <property name="hibernate.id.new_generator_mappings" value="false" />
+    </properties>
+
+  </persistence-unit>
+
+</persistence>

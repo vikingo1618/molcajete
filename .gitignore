@@ -1,0 +1,9 @@
+/liquibase/drivers/*.jar
+/example/.project
+/example/.settings
+/example/example.jpa.model/.project
+/example/example.jpa.model/.settings
+/example/example.jpa.model/.classpath
+/example/example.jpa.persistence/.project
+/example/example.jpa.persistence/.settings
+/example/example.jpa.persistence/.classpath
